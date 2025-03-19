@@ -1,0 +1,55 @@
+{
+  "Title": "Gosu Experiment",
+  "Version": 2,
+  "Name": "GosuTaskManager",
+  "ActiveTab": "src/main/gosu/com/gosutaskmanager/Main.gs",
+  "Tabs": [
+    "src/main/gosu/com/gosutaskmanager/Main.gs"
+  ],
+  "SourcePath": [
+    "src/main/gosu"
+  ],
+  "BackingSource": [
+    "C:/Program Files/Eclipse Adoptium/jdk-8.0.442.6-hotspot/src.zip"
+  ],
+  "RunConfigs": [
+    {
+      "$construct_type": "editor.run.ProgramRunConfig",
+      "_params": {
+        "$construct_type": "editor.run.ProgramRunConfigParameters",
+        "_name": "Main",
+        "_fqn": "com.gosutaskmanager.Main",
+        "_vmArgs": null,
+        "_progArgs": null,
+        "_workingDir": null,
+        "_jre": null,
+        "_bJre": 0
+      }
+    },
+    {
+      "$construct_type": "editor.run.ProgramRunConfig",
+      "_params": {
+        "$construct_type": "editor.run.ProgramRunConfigParameters",
+        "_name": "RunMe",
+        "_fqn": "scratch.RunMe",
+        "_vmArgs": null,
+        "_progArgs": null,
+        "_workingDir": null,
+        "_jre": null,
+        "_bJre": 0
+      }
+    }
+  ],
+  "MruRunConfig": "Main",
+  "Settings": [
+    {
+      "$construct_type": "editor.settings.CompilerSettings",
+      "_params": {
+        "$construct_type": "editor.settings.CompilerSettingsParameters",
+        "_sourceBased": 1,
+        "_ouputPath": "classes"
+      }
+    }
+  ],
+  "MruSettings": null
+}
