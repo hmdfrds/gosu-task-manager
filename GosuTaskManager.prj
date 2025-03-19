@@ -2,9 +2,10 @@
   "Title": "Gosu Experiment",
   "Version": 2,
   "Name": "GosuTaskManager",
-  "ActiveTab": "src/main/gosu/com/gosutaskmanager/Main.gs",
+  "ActiveTab": "src/main/gosu/com/gosutaskmanager/Task.gs",
   "Tabs": [
-    "src/main/gosu/com/gosutaskmanager/Main.gs"
+    "src/main/gosu/com/gosutaskmanager/Main.gs",
+    "src/main/gosu/com/gosutaskmanager/Task.gs"
   ],
   "SourcePath": [
     "src/main/gosu"
