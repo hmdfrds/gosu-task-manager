@@ -6,7 +6,7 @@ uses java.nio.file.Files
 uses java.nio.file.Paths
 uses java.nio.charset.StandardCharsets
 uses gw.lang.reflect.json.Json
-uses gw.lang.reflect.Expando
+uses manifold.api.util.JsonUtil
 
 
 class TaskManager {
@@ -92,7 +92,7 @@ class TaskManager {
       for (task in _tasks){
         jsonArray.add(task.toMap())
       }
-      var jsonContent = Expando.listToJson(jsonArray)
+      var jsonContent = JsonUtil.toJson(jsonArray)
       Files.write(Paths.get(_filePath), jsonContent.getBytes(StandardCharsets.UTF_8))
     }catch (e: Exception){
       print("Error saving tasks: " +e.Message + "\n")

@@ -62,7 +62,7 @@ class Task {
        "id"-> _id,
        "title" -> _title,
        "description" -> _description,
-       "dueDate" -> _dueDate,
+       "dueDate" -> _dueDate.toString(),
        "priority" -> _priority,
        "status" -> _status
      }
