@@ -8,13 +8,14 @@ uses java.time.format.DateTimeParseException
  */
 class Task {
 
-  var _id: int
-  var _title: String
-  var _description: String
-  var _dueDate: LocalDate
-  var _priority: String // High, Medium, Low
-  var _status: String = "Pending"
+  var _id: int as readonly Id 
+  var _title: String as Title
+  var _description: String as Description
+  var _dueDate: LocalDate as DueDate
+  var _priority: String as Priority// High, Medium, Low
+  var _status: String as Status = "Pending" 
   
+ 
   /**
    * Construct a new Task.
    * 
@@ -52,16 +53,6 @@ class Task {
     _priority = capPriority
   }
   
-  property get Id(): int{ return _id }
-  property get Title(): String{ return _title }
-  property get Description(): String { return _description }
-  property get DueDate(): LocalDate { return _dueDate }
-  property get Priority(): String { return _priority }
-  property get Status(): String { return _status }
-  
-  property set Status(newStatus: String) {
-    _status = newStatus
-  }
   
   /**
    * Returns a Map representation of the task for JSON serialization.
@@ -93,6 +84,10 @@ class Task {
      )
      task.Status = data.get("status") as String
      return task
+   }
+   
+   override function toString():String{
+     return "Task #${_id}: ${_title} [${_priority}] - ${_status} (Due: ${_dueDate})"
    }
    
 }

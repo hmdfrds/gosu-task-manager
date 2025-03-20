@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Buy Groceries",
+    "description": "Buy milk, bread, and eggs.",
+    "dueDate": "2025-04-01",
+    "priority": "High",
+    "status": "Pending"
+  },
+  {
+    "id": 2,
+    "title": "Team Meeting",
+    "description": "Discuss project milestones and deadlines.",
+    "dueDate": "2025-04-03",
+    "priority": "Medium",
+    "status": "Completed"
+  },
+  {
+    "id": 3,
+    "title": "Call John",
+    "description": "Follow up on the contract details.",
+    "dueDate": "2025-04-05",
+    "priority": "Low",
+    "status": "Pending"
+  }
+]
