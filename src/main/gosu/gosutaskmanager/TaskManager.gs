@@ -98,7 +98,7 @@ class TaskManager {
         maxId = task.Id
       }
     }
-    return maxId
+    return maxId + 1
   }
   
   function listTasks(){
@@ -118,16 +118,21 @@ class TaskManager {
     })
     
     // Print table header
-    print("--------------------------------------------------\n")
-    print("| ID | Title              | Due Date   | Priority | Status   |\n")
-    print("--------------------------------------------------\n")
-    
+    print("----------------------------------------------------------------\n")
+    print("| ID | Title              | Due Date   | Priority | Status     |\n")
+    print("----------------------------------------------------------------\n")
     // Print each task
     for(task in _tasks){
-   
-      print(String.format("| %2-d | %-18s | %-10s | %-8s |\n",{ String.valueOf(task.Id), task.Title, task.DueDate.toString(), task.Priority, task.Status}))
+     
+      print(String.format("| %2d | %-18s | %-10s | %-8s | %-10s |\n", 
+                     {task.Id, 
+                     task.Title, 
+                     task.DueDate.toString(), 
+                     task.Priority, 
+                     task.Status}))
+
     }
-    print("--------------------------------------------------\n")
+    print("----------------------------------------------------------------\n")
   }
   
   function markTaskAsCompleted(taskId: int){

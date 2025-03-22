@@ -40,6 +40,7 @@ class UI {
           return
         default:
           print("Invalid option. Please try again.\n")
+          break
       }
     }
   }
